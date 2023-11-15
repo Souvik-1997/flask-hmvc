@@ -16,5 +16,3 @@ class MongoDb:
             # You might want to add additional exception handling here
 
         return db
-     
-     

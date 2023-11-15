@@ -1,9 +1,8 @@
 from app.models import MongoDb
 
 class UserModel:
-    model_db_instance = MongoDb()
-    mongo_db = model_db_instance.mongo_db()
-    collection = mongo_db.users
+    model_db_instance = MongoDb.mongo_db()
+    collection = model_db_instance.users
 
     @classmethod
     def create_user(cls, data):
