@@ -13,6 +13,5 @@ class MongoDb:
 
         except pymongo.errors.ServerSelectionTimeoutError as err:
             print(" * Failed to connect DB", err)
-            # You might want to add additional exception handling here
 
         return db
