@@ -26,7 +26,7 @@ def get_users():
 @user_blueprint.route("/create", methods=["POST"])
 def create_user():
     try:
-        data = {"name": "Tony Stark", "email": "stark@gmail.com"}
+        data = {"name": "Harvard Stark", "email": "doe@gmail.com"}
         UserService.create_user(data)
     except Exception as e:
         data = {"error": str(e)}

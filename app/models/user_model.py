@@ -1,8 +1,9 @@
-from app.models import ModelDB
+from app.models import MongoDb
 
 class UserModel:
-    model_db_instance = ModelDB()
-    collection = model_db_instance.mongodb()
+    model_db_instance = MongoDb()
+    mongo_db = model_db_instance.mongo_db()
+    collection = mongo_db.users
 
     @classmethod
     def create_user(cls, data):
